@@ -1,0 +1,40 @@
+/** Store Front:
+Jeep Lift Kit (5) (250.00)
+Jeep Seat Cover Set (10) (150.00)
+Jeep Grille Insert (10) (55.00)
+Jeep Sun Shade (35) (45.00)
+Jeep Universal Cell Phone Holder (45) (40.00)
+Jeep Tail Light Guards (45) (65.00)
+Jeep Handle Inserts (50) (55.00) 
+Jeep Center Console Cover (50) (40.00)
+Jeep Soft Top Kit (30) (210.00)
+Jeep Clear Freedom Panel Set (25) (1045.00)
+Jeep Tube Side Step Kit (15) (250.00)
+Jeep Steel Wheel (40) (175.00)
+Jeep Headlight Set (15) (165.00)
+Jeep Floor Mat Set (25) (275.00)
+Jeep Front Bumper (10) (450.00)
+Jeep Rear Bumper (10) (375.00)
+**/
+
+CREATE TABLE Jeep_Parts (id INTEGER PRIMARY KEY, name TEXT, Quantity INTEGER, aisle INTEGER, price INTEGER);
+INSERT INTO Jeep_Parts VALUES (1, "Jeep Lift Kit", 5, 8, 250.00);
+INSERT INTO Jeep_Parts VALUES (2, "Jeep Seat Cover Set", 10, 4, 150.00);
+INSERT INTO Jeep_Parts VALUES (3,"Jeep Grille Insert", 10, 3, 55.00);
+INSERT INTO Jeep_Parts VALUES (4, "Jeep Sunshade", 35, 1, 45.00);
+INSERT INTO Jeep_Parts VALUES (5, "Universal Cell Phone Holder", 45, 1, 40.00);
+INSERT INTO Jeep_Parts VALUES (6, "Jeep Tail Light Guards", 45, 1, 65.00);
+INSERT INTO Jeep_Parts VALUES (7, "Jeep Handle Inserts", 50, 2,55.00);
+INSERT INTO Jeep_Parts VALUES (8, "Jeep Center Console Cover", 50, 3, 40.00);
+INSERT INTO Jeep_Parts VALUES (9, "Jeep Soft Top Kit", 30, 8, 210.00);
+INSERT INTO Jeep_Parts VALUES (10, "Jeep Clear Freedom Panel Set", 25, 8, 1045.00);
+INSERT INTO Jeep_Parts VALUES (11, "Jeep Tube Side Step Kit", 15, 8, 250.00);
+INSERT INTO Jeep_Parts VALUES (12, "Jeep Steel Wheel", 40, 7, 175.00);
+INSERT INTO Jeep_PARTS VALUES (13, "Jeep Headlight Set", 15, 6, 165.00);
+INSERT INTO Jeep_Parts VALUES (14, "Jeep Floor Mat Set", 25, 5, 275.00);
+INSERT INTO Jeep_Parts VALUES (15, "Jeep Front Bumper", 10, 8, 450.00);
+INSERT INTO Jeep_Parts VALUES (16, "Jeep Rear Bumper", 10, 8, 375.00);
+
+--display the database ordered by price. 
+SELECT * FROM jeep_parts
+ORDER BY price desc;
